@@ -1,0 +1,42 @@
+{
+	"name": "openai-vs-code-complete",
+	"private": true,
+	"displayName": "OpenAI VisualStudio Code Complete",
+	"version": "0.0.1",
+	"publisher": "toban",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/toban/openai-vs-code-complete"
+	},
+	"bugs": {
+		"url": "https://github.com/toban/openai-vs-code-complete/issues"
+	},
+	"engines": {
+		"vscode": "^1.32.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onLanguage:markdown"
+	],
+	"main": "./out/extension.js",
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"lint": "eslint . --ext .ts,.tsx",
+		"watch": "tsc -watch -p ./"
+	},
+	"devDependencies": {
+		"@types/node": "^12.12.0",
+		"@types/vscode": "^1.32.0",
+		"@typescript-eslint/eslint-plugin": "^4.16.0",
+		"@typescript-eslint/parser": "^4.16.0",
+		"eslint": "^7.21.0",
+		"typescript": "^4.2.2"
+	},
+	"dependencies": {
+		"axios": "^0.21.1",
+		"dotenv": "^8.2.0"
+	}
+}
